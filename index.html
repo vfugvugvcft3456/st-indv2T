@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colectia de Fotografii</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Album Foto</h1>
+    </header>
+
+    <section class="gallery">
+        
+        <div class="card"><img src="images/1262432.png" alt="Fotografie 1" onclick="openImage(this.src)"></div>
+        <div class="card"><img src="images/860366.jpg" alt="Fotografie 2" onclick="openImage(this.src)"></div>
+        <div class="card"><img src="images/911-porsche.jpg" alt="Fotografie 3"onclick="openImage(this.src)"></div>
+        <div class="card"><img src="images/aphex-twin-wllppr.jpg" alt="Fotografie 4"onclick="openImage(this.src)"></div>
+        <div class="card"><img src="images/APHEXTWIN.jpg" alt="Fotografie 5"onclick="openImage(this.src)"></div>
+        <div class="card"><img src="images/Captură de ecran 2025-04-06 133949.png" alt="Fotografie 6"onclick="openImage(this.src)"></div>
+        <div class="card"><img src="images/Captură de ecran 2025-04-06 134021.png" alt="Fotografie 7" onclick="openImage(this.src)"></div>
+        <div class="card"><img src="images/f1-racing.jpg" alt="Fotografie 8" onclick="openImage(this.src)"></div>
+        <div class="card"><img src="images/silver-surfer-wallpapers.jpg" alt="Fotografie 9" onclick="openImage(this.src)"></div>
+        <div class="card"><img src="images/silver-surfer.jpg" alt="Fotografie 10"onclick="openImage(this.src)"></div>
+    </section>
+
+    <div id="lightbox" class="lightbox" onclick="closeImage()">
+        <img id="lightbox-img">
+    </div>
+    
+    <script>
+    function openImage(src) {
+        document.getElementById("lightbox-img").src = src;
+        document.getElementById("lightbox").style.display = "flex";
+    }
+    
+    function closeImage() {
+        document.getElementById("lightbox").style.display = "none";
+    }
+    </script>
+    
+</body>
+</html>
